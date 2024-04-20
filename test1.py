@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 from scipy import stats
 
 full_health_data = pd.read_csv("data.csv", header=0, sep=",")
+# header=0 means that the headers for the variable names are to be found in the first row (note that 0 means the first row in Python)
+# sep="," means that "," is used as the separator between the values. This is because we are using the file type .csv (comma separated values)
 
 x = full_health_data["Average_Pulse"]
 y = full_health_data["Calorie_Burnage"]
